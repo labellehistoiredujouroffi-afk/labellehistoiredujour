@@ -1,10 +1,69 @@
 {
   "types": {
-    "lundi":    { "kicker": "Ton week-end en une histoire", "phrases": ["Et toi, quelle est ta belle histoire du jour ?", "Ton week-end t'a offert un joli moment ?", "Raconte-nous un petit moment qui t'a marqué."] },
-    "mercredi": { "kicker": "Appel à témoignages",          "phrases": ["Ton histoire pourrait donner le sourire à quelqu'un.", "Raconte-nous un petit moment qui t'a marqué.", "Tu as vécu une belle histoire ? On veut la lire."] },
-    "vendredi": { "kicker": "La question du vendredi",      "phrases": ["Quelqu'un t'a fait sourire cette semaine ?", "Une bonne nouvelle à partager ?", "Quel petit geste t'a fait du bien récemment ?"] },
-    "dimanche": { "kicker": "La belle histoire de ta semaine", "phrases": ["Quelle a été la belle histoire de ta semaine ?", "Et toi, quelle est ta belle histoire du jour ?", "Un moment de cette semaine que tu veux garder ?"] }
+    "lundi": {
+      "kicker": "Ton week-end en une histoire",
+      "phrases": [
+        "Et toi, quelle est ta belle histoire du jour ?",
+        "Ton week-end t'a offert un joli moment ?",
+        "Raconte-nous un petit moment qui t'a marqué."
+      ]
+    },
+    "mardi": {
+      "kicker": "Le petit défi du mardi",
+      "phrases": [
+        "Dis merci à quelqu'un qu'on ne remercie jamais.",
+        "Envoie un message gentil à quelqu'un que tu n'as pas vu depuis longtemps.",
+        "Laisse un petit mot doux à un voisin ou un collègue."
+      ],
+      "cta": "Défi relevé ? Raconte-nous comment ça s'est passé en <b>message privé</b> 💌"
+    },
+    "mercredi": {
+      "kicker": "Appel à témoignages",
+      "phrases": [
+        "Ton histoire pourrait donner le sourire à quelqu'un.",
+        "Raconte-nous un petit moment qui t'a marqué.",
+        "Tu as vécu une belle histoire ? On veut la lire."
+      ]
+    },
+    "jeudi": {
+      "kicker": "La pensée du jeudi",
+      "phrases": [
+        "Les petits gestes font les grandes histoires.",
+        "Un sourire ne coûte rien et peut changer une journée.",
+        "La gentillesse est contagieuse : fais-la tourner."
+      ],
+      "cta": "Toi aussi, tu as une belle histoire ? Envoie-la nous en <b>message privé</b> 💌"
+    },
+    "vendredi": {
+      "kicker": "La question du vendredi",
+      "phrases": [
+        "Quelqu'un t'a fait sourire cette semaine ?",
+        "Une bonne nouvelle à partager ?",
+        "Quel petit geste t'a fait du bien récemment ?"
+      ]
+    },
+    "samedi": {
+      "kicker": "Spécial week-end",
+      "phrases": [
+        "Qu'est-ce qui va te faire du bien ce week-end ?",
+        "Un moment simple qui te rend heureux ?",
+        "Qui as-tu envie de remercier cette semaine ?"
+      ],
+      "cta": "Réponds-nous en <b>message privé</b> 💌<br>Les plus belles réponses pourraient être partagées."
+    },
+    "dimanche": {
+      "kicker": "La belle histoire de ta semaine",
+      "phrases": [
+        "Quelle a été la belle histoire de ta semaine ?",
+        "Et toi, quelle est ta belle histoire du jour ?",
+        "Un moment de cette semaine que tu veux garder ?"
+      ]
+    }
   },
-  "variants": ["soleil", "carnet", "ciel"],
+  "variants": [
+    "soleil",
+    "carnet",
+    "ciel"
+  ],
   "cta": "Réponds-nous en <b>message privé</b> 💌<br>Avec ton accord, ton histoire pourrait être publiée."
 }
