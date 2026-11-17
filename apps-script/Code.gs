@@ -58,7 +58,9 @@ function onOpen() {
     .addItem('1. Installer / mettre à jour les onglets', 'setup')
     .addItem('2. Afficher le jeton secret', 'showToken')
     .addSeparator()
+    .addItem('3. Importer le catalogue de stories', 'importStoriesMenu')
     .addItem('Simuler la sélection (sans rien modifier)', 'dryRunSelection')
+    .addItem('Auto-test anti-doublon / échec (Tests 7 et 8)', 'runSelfTests')
     .addToUi();
 }
 
@@ -370,6 +372,60 @@ function onEdit(e) {
   }
 }
 
+/* ============================== MENU : STORIES & AUTO-TESTS ============================== */
+
+const PAGES_URL = 'https://labellehistoiredujouroffi-afk.github.io/labellehistoiredujour';
+
+function importStoriesMenu() {
+  const sh = SpreadsheetApp.getActive().getSheetByName(SH.PARAMS);
+  const row = sh.getRange(1, 1, sh.getLastRow(), 1).getValues().flat().indexOf('URL des images (GitHub Pages)');
+  if (row >= 0 && !sh.getRange(row + 1, 2).getValue()) sh.getRange(row + 1, 2).setValue(PAGES_URL);
+  const n = importStoriesCatalog_(PAGES_URL);
+  log_('INFO', 'stories', '', n + ' visuels de stories importés', PAGES_URL);
+  try { SpreadsheetApp.getUi().alert(n + ' visuels de stories importés dans l’onglet « Stories ».'); } catch (e) {}
+  return n;
+}
+
+/**
+ * Test 7 (échec simulé) et Test 8 (anti-doublon), sur une date fictive (2099-01-01), sans aucun appel Instagram.
+ * Tout est nettoyé à la fin ; le résultat est écrit dans le Journal.
+ */
+function runSelfTests() {
+  const date = '2099-01-01', res = [];
+  const check = (cond, label) => { res.push((cond ? '✅ ' : '❌ ') + label); return cond; };
+  let id = null;
+  try {
+    const p = ACTIONS.prepare({ date: date, test: true });
+    id = p.id;
+    check(p.ok && !p.skip && id, 'Sélection et réservation d’une histoire (' + id + ', ' + p.origin + ')');
+    check(findStory_(id).row['Statut'] === ST.RESERVED, 'Statut « Réservée » après sélection');
+    const p2 = ACTIONS.prepare({ date: date, test: true });
+    check(p2.reused && p2.id === id, 'Deuxième préparation le même jour : même histoire, aucun doublon');
+    ACTIONS.rendered({ date: date, id: id, urls: [PAGES_URL + '/test-1.jpg', PAGES_URL + '/test-2.jpg'], caption: 'TEST' });
+    const n1 = ACTIONS.next({ date: date, test: true });
+    check(!n1.skip && n1.id === id && n1.media.length === 2 && n1.media[0].media_type === 'IMAGE', 'Envoi vers Make : statut « Programmée », 2 images au format Instagram');
+    ACTIONS.failed({ date: date, id: id, stage: 'test', error: 'Échec simulé (Test 7)' });
+    const st = findStory_(id).row['Statut'];
+    check(st === ST.ERROR && st !== ST.PUBLISHED, 'Après échec : « Erreur – à vérifier », jamais « Publiée »');
+    const n2 = ACTIONS.next({ date: date, test: true });
+    check(n2.skip && n2.reason === 'NEEDS_MANUAL_CHECK', 'Pas de relance aveugle après échec (vérification manuelle exigée)');
+    const p3 = ACTIONS.prepare({ date: date, test: true });
+    check(p3.skip && p3.reason === 'ALREADY_PREPARED', 'Aucune nouvelle histoire prise pour une journée déjà traitée');
+  } catch (e) {
+    res.push('❌ Exception : ' + e.message);
+  } finally {
+    // Nettoyage : suppression de la ligne de test et remise en circulation de l'histoire.
+    const cal = SpreadsheetApp.getActive().getSheetByName(SH.CAL);
+    rows_(cal).filter(r => fmtDate_(r.row['Date programmée']) === date).reverse().forEach(r => cal.deleteRow(r.rowIndex));
+    if (id) { const s = findStory_(id); setStoryFields_(s.sheet, s.rowIndex, { 'Statut': s.origin === 'fiction' ? ST.DISPO : ST.READY_REAL, 'Réservée le': '' }); }
+    res.push('🧹 Nettoyage effectué (' + (id || '-') + ' remise en circulation)');
+  }
+  const ok = res.every(l => !l.startsWith('❌'));
+  log_(ok ? 'INFO' : 'ERREUR', 'auto-test', id || '', ok ? 'Tests 7 et 8 réussis' : 'Tests 7/8 en échec', res.join(' | '));
+  try { SpreadsheetApp.getUi().alert(res.join('\n')); } catch (e) {}
+  return res;
+}
+
 /* ============================== OUTILS ============================== */
 
 function dryRunSelection() {
@@ -443,10 +499,9 @@ function applyStatusValidation_(sh, col, values) {
 }
 function param_(name) {
   const sh = SpreadsheetApp.getActive().getSheetByName(SH.PARAMS);
-  const v = sh.getRange(1, 1, sh.getLastRow(), 2).getValues().find(r => r[0] === name);
-  if (!v) return '';
-  if (v[1] instanceof Date) return Utilities.formatDate(v[1], TZ, 'HH:mm');
-  return v[1];
+  // Valeurs affichées (évite les décalages de fuseau sur les cellules « heure »).
+  const v = sh.getRange(1, 1, sh.getLastRow(), 2).getDisplayValues().find(r => r[0] === name);
+  return v ? v[1] : '';
 }
 function paramBool_(name) { return String(param_(name)).trim().toUpperCase() === 'OUI'; }
 function log_(level, step, id, msg, detail) {
