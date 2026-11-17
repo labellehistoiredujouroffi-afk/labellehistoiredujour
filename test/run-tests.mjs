@@ -8,7 +8,7 @@ for (const f of (await readdir("test")).filter((x) => x.endsWith(".json"))) {
   const m = await renderStory(s, "out/" + s.id, {}, b);
   ok(m.ok, `${s.id} : rendu ${m.mode}, ${m.files.length} slide(s), ${m.fontSize}px, débordement=${m.overflow ?? "-"}`);
   if (m.ok) {
-    ok(s.origin !== "fiction" || /Histoire imaginée/.test(m.caption), `${s.id} : légende mentionne l'origine`);
+    ok(!/imaginée/i.test(m.caption), `${s.id} : aucune mention « Histoire imaginée »`);
     ok([...m.caption].length <= 2200, `${s.id} : légende ≤ 2200 caractères`);
   }
 }
