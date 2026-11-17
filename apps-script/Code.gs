@@ -229,7 +229,7 @@ const ACTIONS = {
     const st = findStory_(id); setStoryFields_(st.sheet, st.rowIndex, { 'Statut': ST.SCHEDULED });
     const urls = String(cal.row['URLs des images']).split('\n').filter(String);
     return { ok: true, skip: false, date: date, id: id, caption: cal.row['Légende'], urls: urls, count: urls.length,
-      mode: urls.length > 1 ? 'carousel' : 'single', image: urls[0], media: urls.map(u => ({ url: u, type: 'IMAGE' })) };
+      mode: urls.length > 1 ? 'carousel' : 'single', image: urls[0], media: urls.map(u => ({ media_type: 'IMAGE', image_url: u })) };
   },
 
   /** Make : publication confirmée par Instagram. */
