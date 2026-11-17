@@ -48,7 +48,7 @@
 
   function badge(story) {
     return story.origin === "fiction"
-      ? `<span class="badge fiction">${ICON_SPARK}Histoire imaginée</span>`
+      ? ""
       : `<span class="badge real">${ICON_HEART}Histoire vraie</span>`;
   }
   function brandbar(i, n) {
@@ -56,8 +56,7 @@
   }
   function dots(i, n) { return n > 1 ? `<span class="dots">${Array.from({ length: n }, (_, k) => `<i class="${k + 1 === i ? "on" : ""}"></i>`).join("")}</span>` : ""; }
   function credit(story) {
-    if (story.origin === "fiction")
-      return "✦ Histoire imaginée : une fiction positive écrite par la rédaction de La Belle Histoire du Jour. Ce n’est pas un témoignage réel.";
+    if (story.origin === "fiction") return "";
     if (story.mentionAuthor && story.author) return `Histoire vraie partagée par ${esc(story.author)}, avec son accord.`;
     return "Histoire vraie partagée par une personne de la communauté, avec son accord.";
   }
@@ -80,7 +79,7 @@
       ${brandbar(0, 0)}
       <div class="ttl">${esc(frTypo(story.title || ""))}</div>
       <div class="text"><div class="inner"></div></div>
-      <div class="foot">${story.origin === "fiction" ? `<span>✦ Histoire imaginée</span>` : `<span>Histoire vraie</span>`}<span class="dotsHolder" style="margin-left:auto"></span></div>
+      <div class="foot">${story.origin === "fiction" ? `<span></span>` : `<span>Histoire vraie</span>`}<span class="dotsHolder" style="margin-left:auto"></span></div>
     </section>`);
   }
   function endSlide(story) {
@@ -88,7 +87,6 @@
       <div class="halo"></div>
       ${brandbar(0, 0)}
       <div class="body">
-        <div class="fin">Fin.</div>
         <h2>Et toi, quelle est ta belle histoire du jour${NNB}?</h2>
         <p class="how">Raconte-la nous en <b>message privé</b> ou en <b>commentaire</b>. Avec ton accord, elle pourrait faire sourire quelqu’un demain.</p>
       </div>
@@ -103,6 +101,7 @@
         ${story.theme ? `<div class="kicker">${esc(frTypo(story.theme))}</div>` : ""}
         <h1>${esc(frTypo(story.title || ""))}</h1>
         <div class="txt"></div>
+        <div class="finmark">Fin.</div>
         <div class="cta">Et toi, quelle est ta belle histoire du jour${NNB}? Raconte-la nous en message privé.</div>
       </div>
       <div class="foot">${badge(story)}</div>
@@ -157,6 +156,22 @@
           if (overflows(box())) return null; // une phrase seule ne tient pas sur une page : taille trop grande
         }
       }
+    }
+    // Le mot « Fin. » termine le récit sur la dernière image de texte, juste avant l'image d'appel à participer.
+    // S'il ne tient pas, la dernière phrase passe sur une nouvelle image avec lui (jamais une image avec « Fin. » seul).
+    const addFin = () => { const f = document.createElement("p"); f.className = "finmark"; f.textContent = "Fin."; inner().appendChild(f); return f; };
+    let fin = addFin();
+    if (overflows(box())) {
+      fin.remove();
+      const ps = [...inner().querySelectorAll("p")];
+      const last = ps[ps.length - 1];
+      const ss = sentences(last.textContent);
+      const moved = ss.pop();
+      if (ss.length) last.textContent = ss.join(" "); else last.remove();
+      fresh();
+      const p = document.createElement("p"); p.textContent = moved; inner().appendChild(p);
+      fin = addFin();
+      if (overflows(box())) return null;
     }
     if (inner().childElementCount) out.push(slide); else slide.remove();
     return out;
