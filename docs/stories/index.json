@@ -1,0 +1,290 @@
+[
+  {
+    "id": "S-lundi-1-soleil",
+    "type": "lundi",
+    "text": "Et toi, quelle est ta belle histoire du jour ?",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "soleil",
+    "file": "S-lundi-1-soleil.jpg"
+  },
+  {
+    "id": "S-lundi-1-carnet",
+    "type": "lundi",
+    "text": "Et toi, quelle est ta belle histoire du jour ?",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "carnet",
+    "file": "S-lundi-1-carnet.jpg"
+  },
+  {
+    "id": "S-lundi-1-ciel",
+    "type": "lundi",
+    "text": "Et toi, quelle est ta belle histoire du jour ?",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "ciel",
+    "file": "S-lundi-1-ciel.jpg"
+  },
+  {
+    "id": "S-lundi-2-soleil",
+    "type": "lundi",
+    "text": "Ton week-end t'a offert un joli moment ?",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "soleil",
+    "file": "S-lundi-2-soleil.jpg"
+  },
+  {
+    "id": "S-lundi-2-carnet",
+    "type": "lundi",
+    "text": "Ton week-end t'a offert un joli moment ?",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "carnet",
+    "file": "S-lundi-2-carnet.jpg"
+  },
+  {
+    "id": "S-lundi-2-ciel",
+    "type": "lundi",
+    "text": "Ton week-end t'a offert un joli moment ?",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "ciel",
+    "file": "S-lundi-2-ciel.jpg"
+  },
+  {
+    "id": "S-lundi-3-soleil",
+    "type": "lundi",
+    "text": "Raconte-nous un petit moment qui t'a marqué.",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "soleil",
+    "file": "S-lundi-3-soleil.jpg"
+  },
+  {
+    "id": "S-lundi-3-carnet",
+    "type": "lundi",
+    "text": "Raconte-nous un petit moment qui t'a marqué.",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "carnet",
+    "file": "S-lundi-3-carnet.jpg"
+  },
+  {
+    "id": "S-lundi-3-ciel",
+    "type": "lundi",
+    "text": "Raconte-nous un petit moment qui t'a marqué.",
+    "kicker": "Ton week-end en une histoire",
+    "variant": "ciel",
+    "file": "S-lundi-3-ciel.jpg"
+  },
+  {
+    "id": "S-mercredi-1-soleil",
+    "type": "mercredi",
+    "text": "Ton histoire pourrait donner le sourire à quelqu'un.",
+    "kicker": "Appel à témoignages",
+    "variant": "soleil",
+    "file": "S-mercredi-1-soleil.jpg"
+  },
+  {
+    "id": "S-mercredi-1-carnet",
+    "type": "mercredi",
+    "text": "Ton histoire pourrait donner le sourire à quelqu'un.",
+    "kicker": "Appel à témoignages",
+    "variant": "carnet",
+    "file": "S-mercredi-1-carnet.jpg"
+  },
+  {
+    "id": "S-mercredi-1-ciel",
+    "type": "mercredi",
+    "text": "Ton histoire pourrait donner le sourire à quelqu'un.",
+    "kicker": "Appel à témoignages",
+    "variant": "ciel",
+    "file": "S-mercredi-1-ciel.jpg"
+  },
+  {
+    "id": "S-mercredi-2-soleil",
+    "type": "mercredi",
+    "text": "Raconte-nous un petit moment qui t'a marqué.",
+    "kicker": "Appel à témoignages",
+    "variant": "soleil",
+    "file": "S-mercredi-2-soleil.jpg"
+  },
+  {
+    "id": "S-mercredi-2-carnet",
+    "type": "mercredi",
+    "text": "Raconte-nous un petit moment qui t'a marqué.",
+    "kicker": "Appel à témoignages",
+    "variant": "carnet",
+    "file": "S-mercredi-2-carnet.jpg"
+  },
+  {
+    "id": "S-mercredi-2-ciel",
+    "type": "mercredi",
+    "text": "Raconte-nous un petit moment qui t'a marqué.",
+    "kicker": "Appel à témoignages",
+    "variant": "ciel",
+    "file": "S-mercredi-2-ciel.jpg"
+  },
+  {
+    "id": "S-mercredi-3-soleil",
+    "type": "mercredi",
+    "text": "Tu as vécu une belle histoire ? On veut la lire.",
+    "kicker": "Appel à témoignages",
+    "variant": "soleil",
+    "file": "S-mercredi-3-soleil.jpg"
+  },
+  {
+    "id": "S-mercredi-3-carnet",
+    "type": "mercredi",
+    "text": "Tu as vécu une belle histoire ? On veut la lire.",
+    "kicker": "Appel à témoignages",
+    "variant": "carnet",
+    "file": "S-mercredi-3-carnet.jpg"
+  },
+  {
+    "id": "S-mercredi-3-ciel",
+    "type": "mercredi",
+    "text": "Tu as vécu une belle histoire ? On veut la lire.",
+    "kicker": "Appel à témoignages",
+    "variant": "ciel",
+    "file": "S-mercredi-3-ciel.jpg"
+  },
+  {
+    "id": "S-vendredi-1-soleil",
+    "type": "vendredi",
+    "text": "Quelqu'un t'a fait sourire cette semaine ?",
+    "kicker": "La question du vendredi",
+    "variant": "soleil",
+    "file": "S-vendredi-1-soleil.jpg"
+  },
+  {
+    "id": "S-vendredi-1-carnet",
+    "type": "vendredi",
+    "text": "Quelqu'un t'a fait sourire cette semaine ?",
+    "kicker": "La question du vendredi",
+    "variant": "carnet",
+    "file": "S-vendredi-1-carnet.jpg"
+  },
+  {
+    "id": "S-vendredi-1-ciel",
+    "type": "vendredi",
+    "text": "Quelqu'un t'a fait sourire cette semaine ?",
+    "kicker": "La question du vendredi",
+    "variant": "ciel",
+    "file": "S-vendredi-1-ciel.jpg"
+  },
+  {
+    "id": "S-vendredi-2-soleil",
+    "type": "vendredi",
+    "text": "Une bonne nouvelle à partager ?",
+    "kicker": "La question du vendredi",
+    "variant": "soleil",
+    "file": "S-vendredi-2-soleil.jpg"
+  },
+  {
+    "id": "S-vendredi-2-carnet",
+    "type": "vendredi",
+    "text": "Une bonne nouvelle à partager ?",
+    "kicker": "La question du vendredi",
+    "variant": "carnet",
+    "file": "S-vendredi-2-carnet.jpg"
+  },
+  {
+    "id": "S-vendredi-2-ciel",
+    "type": "vendredi",
+    "text": "Une bonne nouvelle à partager ?",
+    "kicker": "La question du vendredi",
+    "variant": "ciel",
+    "file": "S-vendredi-2-ciel.jpg"
+  },
+  {
+    "id": "S-vendredi-3-soleil",
+    "type": "vendredi",
+    "text": "Quel petit geste t'a fait du bien récemment ?",
+    "kicker": "La question du vendredi",
+    "variant": "soleil",
+    "file": "S-vendredi-3-soleil.jpg"
+  },
+  {
+    "id": "S-vendredi-3-carnet",
+    "type": "vendredi",
+    "text": "Quel petit geste t'a fait du bien récemment ?",
+    "kicker": "La question du vendredi",
+    "variant": "carnet",
+    "file": "S-vendredi-3-carnet.jpg"
+  },
+  {
+    "id": "S-vendredi-3-ciel",
+    "type": "vendredi",
+    "text": "Quel petit geste t'a fait du bien récemment ?",
+    "kicker": "La question du vendredi",
+    "variant": "ciel",
+    "file": "S-vendredi-3-ciel.jpg"
+  },
+  {
+    "id": "S-dimanche-1-soleil",
+    "type": "dimanche",
+    "text": "Quelle a été la belle histoire de ta semaine ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "soleil",
+    "file": "S-dimanche-1-soleil.jpg"
+  },
+  {
+    "id": "S-dimanche-1-carnet",
+    "type": "dimanche",
+    "text": "Quelle a été la belle histoire de ta semaine ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "carnet",
+    "file": "S-dimanche-1-carnet.jpg"
+  },
+  {
+    "id": "S-dimanche-1-ciel",
+    "type": "dimanche",
+    "text": "Quelle a été la belle histoire de ta semaine ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "ciel",
+    "file": "S-dimanche-1-ciel.jpg"
+  },
+  {
+    "id": "S-dimanche-2-soleil",
+    "type": "dimanche",
+    "text": "Et toi, quelle est ta belle histoire du jour ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "soleil",
+    "file": "S-dimanche-2-soleil.jpg"
+  },
+  {
+    "id": "S-dimanche-2-carnet",
+    "type": "dimanche",
+    "text": "Et toi, quelle est ta belle histoire du jour ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "carnet",
+    "file": "S-dimanche-2-carnet.jpg"
+  },
+  {
+    "id": "S-dimanche-2-ciel",
+    "type": "dimanche",
+    "text": "Et toi, quelle est ta belle histoire du jour ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "ciel",
+    "file": "S-dimanche-2-ciel.jpg"
+  },
+  {
+    "id": "S-dimanche-3-soleil",
+    "type": "dimanche",
+    "text": "Un moment de cette semaine que tu veux garder ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "soleil",
+    "file": "S-dimanche-3-soleil.jpg"
+  },
+  {
+    "id": "S-dimanche-3-carnet",
+    "type": "dimanche",
+    "text": "Un moment de cette semaine que tu veux garder ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "carnet",
+    "file": "S-dimanche-3-carnet.jpg"
+  },
+  {
+    "id": "S-dimanche-3-ciel",
+    "type": "dimanche",
+    "text": "Un moment de cette semaine que tu veux garder ?",
+    "kicker": "La belle histoire de ta semaine",
+    "variant": "ciel",
+    "file": "S-dimanche-3-ciel.jpg"
+  }
+]
