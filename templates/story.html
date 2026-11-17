@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  body { margin: 0; }
+  .story { width: 1080px; height: 1920px; position: relative; overflow: hidden; box-sizing: border-box; font-family: var(--f-ui); }
+  /* Zones de sécurité Instagram : ~250 px en haut et en bas restent dégagés (barre de progression, champ de réponse). */
+  .top { position: absolute; top: 260px; left: 100px; right: 100px; display: flex; align-items: center; gap: 18px; }
+  .top svg { width: 64px; height: 64px; }
+  .top span { font-weight: 600; font-size: 26px; letter-spacing: .22em; text-transform: uppercase; }
+  .q { position: absolute; left: 100px; right: 100px; top: 470px; }
+  .q .kick { font-family: var(--f-hand); font-weight: 600; font-size: 70px; line-height: 1; margin-bottom: 26px; }
+  .q h1 { font-family: var(--f-title); font-weight: 600; margin: 0; line-height: 1.06; letter-spacing: -.01em; text-wrap: balance; }
+  .sticker-zone { position: absolute; left: 140px; right: 140px; top: 1160px; height: 300px; border: 4px dashed currentColor;
+    border-radius: 36px; opacity: .28; display: flex; align-items: center; justify-content: center;
+    font-size: 28px; letter-spacing: .1em; text-transform: uppercase; }
+  .cta { position: absolute; left: 100px; right: 100px; bottom: 300px; font-size: 38px; line-height: 1.35; }
+  .cta b { font-weight: 600; }
+  .handle { position: absolute; left: 100px; right: 100px; bottom: 250px; font-size: 26px; letter-spacing: .08em; opacity: .75; }
+
+  /* Variante A — Soleil levant */
+  .v-soleil { background: var(--paper); color: var(--ink); }
+  .v-soleil .sunrise { position: absolute; left: 50%; bottom: -1000px; width: 1500px; height: 1500px; transform: translateX(-50%);
+    border-radius: 50%; background: radial-gradient(circle, var(--sun) 0 30%, var(--sun-soft) 30% 42%, rgba(255,217,168,.35) 42% 56%, rgba(255,217,168,0) 70%); }
+  .v-soleil .kick { color: var(--sun-deep); }
+  .v-soleil .cta, .v-soleil .handle { color: var(--ink); }
+  .v-soleil .cta { bottom: auto; top: 1180px; } .v-soleil .handle { bottom: auto; top: 1400px; }
+  .v-soleil .sticker-zone { color: var(--ink); }
+
+  /* Variante B — Carnet */
+  .v-carnet { background: linear-gradient(170deg, var(--sun) 0%, var(--sun-deep) 100%); color: var(--paper); }
+  .v-carnet .note { position: absolute; left: 80px; right: 80px; top: 420px; height: 680px; background: var(--paper); border-radius: 28px;
+    transform: rotate(-2.2deg); box-shadow: 0 30px 60px rgba(80,20,0,.25);
+    background-image: repeating-linear-gradient(transparent 0 78px, var(--line) 78px 81px); }
+  .v-carnet .q { top: 500px; left: 150px; right: 150px; transform: rotate(-2.2deg); color: var(--ink); }
+  .v-carnet .q .kick { color: var(--sun-deep); }
+  .v-carnet .q h1 { font-family: var(--f-hand); font-weight: 600; line-height: 1.02; }
+  .v-carnet .top { color: var(--paper); }
+  .v-carnet .top path { fill: var(--paper); } .v-carnet .top line, .v-carnet .top g { stroke: var(--paper) !important; }
+
+  /* Variante C — Ciel du soir */
+  .v-ciel { background: linear-gradient(180deg, #4E3A6E 0%, var(--plum) 45%, #C9708A 100%); color: var(--paper); }
+  .v-ciel .stars { position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.7) 1.6px, transparent 2px), radial-gradient(rgba(255,255,255,.45) 1.2px, transparent 1.6px);
+    background-size: 170px 190px, 110px 130px; background-position: 20px 40px, 70px 90px; mask-image: linear-gradient(#000 0%, transparent 60%); }
+  .v-ciel .moon { position: absolute; right: 120px; top: 380px; width: 150px; height: 150px; border-radius: 50%; box-shadow: -34px 18px 0 0 var(--sun-soft); }
+  .v-ciel .kick { color: var(--sun-soft); }
+  .v-ciel .top path { fill: var(--sun-soft); } .v-ciel .top line, .v-ciel .top g { stroke: var(--paper) !important; }
+  .v-ciel .q h1 { font-style: italic; font-weight: 400; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const MARK = `<svg viewBox="0 0 64 64"><path d="M10 44 A22 22 0 0 1 54 44 Z" fill="var(--sun)"/><g stroke="var(--sun-deep)" stroke-width="3.2" stroke-linecap="round"><line x1="32" y1="6" x2="32" y2="14"/><line x1="13" y1="14" x2="18" y2="20"/><line x1="51" y1="14" x2="46" y2="20"/><line x1="4" y1="31" x2="11" y2="33"/><line x1="60" y1="31" x2="53" y2="33"/></g><line x1="4" y1="50" x2="60" y2="50" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><line x1="16" y1="57" x2="48" y2="57" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" opacity=".45"/></svg>`;
+const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+const typo = (s) => String(s).replace(/'/g, "’").replace(/\s+([?!;])/g, " $1").replace(/«\s*/g, "« ").replace(/\s*»/g, " »");
+window.renderStory = async function (d) {
+  await Promise.all([...document.fonts].map((f) => f.load().catch(() => null)));
+  const deco = { soleil: `<div class="sunrise"></div>`, carnet: `<div class="note"></div>`, ciel: `<div class="stars"></div><div class="moon"></div>` }[d.variant];
+  document.getElementById("stage").innerHTML = `<section class="story v-${d.variant}">${deco}
+    <div class="top">${MARK}<span>La Belle Histoire du Jour</span></div>
+    <div class="q"><div class="kick">${esc(typo(d.kicker))}</div><h1>${esc(typo(d.text))}</h1></div>
+    ${d.stickerZone ? `<div class="sticker-zone">Zone sticker (optionnel)</div>` : ""}
+    <div class="cta">${d.cta}</div>
+    <div class="handle">@bellehistoiredujour</div></section>`;
+  const h1 = document.querySelector("h1"), q = document.querySelector(".q");
+  const maxH = d.variant === "carnet" ? 560 : 640;
+  for (const fs of [124, 112, 104, 96, 88, 80, 72, 66]) { h1.style.fontSize = fs + "px"; if (q.scrollHeight <= maxH && h1.scrollWidth <= h1.clientWidth + 1) return { ok: true, fontSize: fs }; }
+  return { ok: false, error: "STORY_TEXT_TOO_LONG" };
+};
+</script>
+</body>
+</html>
