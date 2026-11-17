@@ -46,7 +46,7 @@ export function buildCaption(story, render = { slides: 1 }) {
 
   let origin;
   if (story.origin === "fiction") {
-    origin = "✦ Histoire imaginée : cette fiction positive a été écrite par la rédaction de La Belle Histoire du Jour. Ce n'est pas un témoignage réel.";
+    origin = "";
   } else if (story.mentionAuthor && (story.authorHandle || story.author)) {
     origin = `💛 Histoire vraie, partagée par ${story.authorHandle ? story.authorHandle : story.author} avec son accord. Merci !`;
   } else {
@@ -56,9 +56,9 @@ export function buildCaption(story, render = { slides: 1 }) {
   const themeKeys = [strip(story.theme), strip(story.angle)].filter(Boolean);
   const tags = [...BASE_TAGS];
   for (const k of themeKeys) for (const t of THEME_TAGS[k] || []) if (!tags.includes(t)) tags.push(t);
-  if (story.origin === "fiction") tags.push("#fictionpositive"); else tags.push("#histoirevraie");
+  if (story.origin !== "fiction") tags.push("#histoirevraie");
 
-  const caption = `${intro}\n\n« ${story.title} »\n\n${hook}${swipe}\n\n${origin}\n\n${outro}\n\n${tags.slice(0, 8).join(" ")}`;
+  const caption = `${intro}\n\n« ${story.title} »\n\n${hook}${swipe}${origin ? `\n\n${origin}` : ""}\n\n${outro}\n\n${tags.slice(0, 8).join(" ")}`;
   if ([...caption].length > 2200) throw new Error("CAPTION_TOO_LONG");
   return caption;
 }
