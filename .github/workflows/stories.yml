@@ -1,0 +1,23 @@
+name: Stories automatiques
+on:
+  schedule:
+    - cron: "15 11 * * *"   # 12:15 (hiver) / 13:15 (été) à Paris. Les jours de story se règlent dans le Sheet (Paramètres).
+  workflow_dispatch:
+    inputs:
+      test: { description: "Mode test (ignore l'interrupteur Paramètres) — PUBLIE RÉELLEMENT une story", type: boolean, default: false }
+concurrency: { group: stories, cancel-in-progress: false }
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node src/story.mjs
+        env:
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          APPS_SCRIPT_TOKEN: ${{ secrets.APPS_SCRIPT_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: "17841477131718128"
+          TEST: ${{ inputs.test && '1' || '0' }}
