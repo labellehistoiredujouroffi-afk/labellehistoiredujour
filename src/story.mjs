@@ -21,6 +21,9 @@ async function graph(path, params, method = "POST") {
 }
 
 if (!IG_ACCESS_TOKEN) { console.log("Secret IG_ACCESS_TOKEN absent : aucune story publiée (rien n'est modifié dans le Sheet)."); process.exit(0); }
+// Contrôle du jeton (lecture seule) : on vérifie qu'il ouvre bien le bon compte Instagram.
+try { const me = await graph(IG_USER_ID, { fields: "username" }, "GET"); console.log(`Jeton valide : connecté à @${me.username}`); }
+catch (e) { console.error("Jeton Instagram invalide ou expiré :", e.message); process.exit(1); }
 const s = await api("story");
 if (s.skip) { console.log("Pas de story aujourd'hui :", s.reason); process.exit(0); }
 console.log(`Story ${s.id} → ${s.image}`);
