@@ -2,7 +2,7 @@
 // Variables : APPS_SCRIPT_URL, APPS_SCRIPT_TOKEN, IG_ACCESS_TOKEN, IG_USER_ID, [GRAPH_VERSION], [TEST=1]
 // Le Google Sheet décide du jour et du visuel (onglet Paramètres + Stories) ; ce script ne fait qu'exécuter.
 const { APPS_SCRIPT_URL, APPS_SCRIPT_TOKEN, IG_ACCESS_TOKEN, IG_USER_ID } = process.env;
-const GRAPH = `https://graph.facebook.com/${process.env.GRAPH_VERSION || "v23.0"}`;
+const GRAPH = `https://graph.facebook.com/${process.env.GRAPH_VERSION || "v27.0"}`;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function api(action, payload = {}) {
@@ -20,6 +20,7 @@ async function graph(path, params, method = "POST") {
   return j;
 }
 
+if (!IG_ACCESS_TOKEN) { console.log("Secret IG_ACCESS_TOKEN absent : aucune story publiée (rien n'est modifié dans le Sheet)."); process.exit(0); }
 const s = await api("story");
 if (s.skip) { console.log("Pas de story aujourd'hui :", s.reason); process.exit(0); }
 console.log(`Story ${s.id} → ${s.image}`);
