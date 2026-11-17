@@ -1,0 +1,10 @@
+{
+  "types": {
+    "lundi":    { "kicker": "Ton week-end en une histoire", "phrases": ["Et toi, quelle est ta belle histoire du jour ?", "Ton week-end t'a offert un joli moment ?", "Raconte-nous un petit moment qui t'a marqué."] },
+    "mercredi": { "kicker": "Appel à témoignages",          "phrases": ["Ton histoire pourrait donner le sourire à quelqu'un.", "Raconte-nous un petit moment qui t'a marqué.", "Tu as vécu une belle histoire ? On veut la lire."] },
+    "vendredi": { "kicker": "La question du vendredi",      "phrases": ["Quelqu'un t'a fait sourire cette semaine ?", "Une bonne nouvelle à partager ?", "Quel petit geste t'a fait du bien récemment ?"] },
+    "dimanche": { "kicker": "La belle histoire de ta semaine", "phrases": ["Quelle a été la belle histoire de ta semaine ?", "Et toi, quelle est ta belle histoire du jour ?", "Un moment de cette semaine que tu veux garder ?"] }
+  },
+  "variants": ["soleil", "carnet", "ciel"],
+  "cta": "Réponds-nous en <b>message privé</b> 💌<br>Avec ton accord, ton histoire pourrait être publiée."
+}
