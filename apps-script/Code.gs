@@ -266,7 +266,7 @@ const ACTIONS = {
     const sh = SpreadsheetApp.getActive().getSheetByName(SH.STORIES);
     const rows = rows_(sh);
     const todayStr = todayStr_();
-    if (rows.some(r => String(r.row['Dernière publication']).indexOf(todayStr) === 0 && (r.row['Statut'] === 'Publiée' || r.row['Statut'] === 'Programmée')))
+    if (rows.some(r => String(r.row['Dernière publication']).indexOf(todayStr) === 0 && (r.row['Statut'] === 'Publiée' || r.row['Statut'] === 'Programmée' || r.row['Statut'] === 'Erreur – à vérifier')))
       return { ok: true, skip: true, reason: 'ALREADY_DONE_TODAY' };
     // Type de story = jour ; si le jour n'a pas de texte dédié, on prend le pool « mercredi » (appel à témoignages).
     let pool = rows.filter(r => r.row['Active'] === 'OUI' && r.row['Jour'] === today && r.row['Statut'] !== 'Erreur – à vérifier');
