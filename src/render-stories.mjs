@@ -12,10 +12,10 @@ await page.goto(pathToFileURL(path.join(ROOT, "templates/story.html")).href);
 const index = []; let k = 0;
 for (const [type, t] of Object.entries(cat.types)) t.phrases.forEach((text, i) => cat.variants.forEach((variant, j) => {
   // Rotation des visuels : chaque phrase n'utilise pas toujours le même fond.
-  index.push({ id: `S-${type}-${i + 1}-${variant}`, type, text, kicker: t.kicker, variant });
+  index.push({ id: `S-${type}-${i + 1}-${variant}`, type, text, kicker: t.kicker, variant, cta: t.cta || cat.cta });
 }));
 for (const s of index) {
-  const r = await page.evaluate((d) => window.renderStory(d), { ...s, cta: cat.cta });
+  const r = await page.evaluate((d) => window.renderStory(d), s);
   if (!r.ok) throw new Error(`${s.id}: ${r.error}`);
   s.file = `${s.id}.jpg`;
   await (await page.$(".story")).screenshot({ path: path.join(out, s.file), type: "jpeg", quality: 92 });
