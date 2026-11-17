@@ -22,7 +22,7 @@ const THEME_TAGS = {
   generations: ["#generations", "#transmission"], amitie: ["#amitie"], deuil: ["#memoire", "#douceur"], handicap: ["#inclusion"],
   accessibilite: ["#inclusion"], ecologie: ["#ecologie"], mer: ["#mer"], montagne: ["#montagne"], art: ["#art", "#creativite"],
   lecture: ["#lecture", "#livres"], bibliotheque: ["#lecture", "#bibliotheque"], rugby: ["#rugby", "#espritdequipe"], velo: ["#velo"],
-  voyage: ["#voyage"], science: ["#science"], medecine: ["#soignants"], commerce: ["#commercedeproximite"], benevolat: ["#benevolat"],
+  voyage: ["#voyage"], amour: ["#amour", "#couple"], gentillesse: ["#gentillesse", "#bienveillance"], science: ["#science"], medecine: ["#soignants"], commerce: ["#commercedeproximite"], benevolat: ["#benevolat"],
 };
 const strip = (s) => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "");
 function hash(s) { let h = 2166136261; for (const c of String(s)) { h ^= c.codePointAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
