@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  html, body { margin: 0; background: #000; }
+  /* 1080x1920. Zones de sécurité Reels : haut ~260 px, bas ~420 px (légende + boutons), droite ~150 px (icônes). */
+  .reel { width: 1080px; height: 1920px; position: relative; overflow: hidden; background: var(--paper); color: var(--ink); }
+  .glow { position: absolute; width: 1300px; height: 1300px; right: -620px; top: -560px; border-radius: 50%;
+    background: radial-gradient(circle, var(--sun-soft) 0%, rgba(255,217,168,.55) 38%, rgba(255,217,168,0) 70%); }
+  .glow2 { position: absolute; width: 1100px; height: 1100px; left: -640px; bottom: -520px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(242,137,78,.22) 0%, rgba(242,137,78,0) 70%); }
+  .brand { position: absolute; top: 270px; left: 96px; display: flex; align-items: center; gap: 16px; font-family: var(--f-ui);
+    font-weight: 600; font-size: 24px; letter-spacing: .22em; text-transform: uppercase; }
+  .brand svg { width: 58px; height: 58px; }
+  .content { position: absolute; left: 96px; right: 170px; top: 380px; bottom: 430px; display: flex; flex-direction: column; }
+  h1 { font-family: var(--f-title); font-weight: 600; font-size: 76px; line-height: 1.05; margin: 0 0 44px; text-wrap: balance; opacity: 0; }
+  .rule { width: 90px; height: 6px; border-radius: 3px; background: var(--sun); margin: -14px 0 40px; opacity: 0; }
+  .text { flex: 1; min-height: 0; font-family: var(--f-body); line-height: 1.5; }
+  .text p { margin: 0; }
+  .rest { color: transparent; }
+  #last.on { box-shadow: .07em 0 0 var(--sun-deep); }
+  .fin { font-family: var(--f-title); font-style: italic; font-weight: 600; color: var(--sun-deep); text-align: right; margin-top: .55em; opacity: 0; font-size: 1.2em; }
+  /* Carte finale */
+  .end { position: absolute; inset: 0; opacity: 0; background: linear-gradient(165deg, var(--sun) 0%, var(--sun-deep) 100%); color: var(--paper); }
+  .end .halo { position: absolute; width: 1300px; height: 1300px; left: -480px; bottom: -640px; border-radius: 50%; background: rgba(255,255,255,.12); }
+  .end .in { position: absolute; left: 96px; right: 170px; top: 560px; }
+  .end h2 { font-family: var(--f-title); font-weight: 600; font-size: 96px; line-height: 1.04; margin: 0 0 44px; }
+  .end p { font-family: var(--f-ui); font-size: 40px; line-height: 1.4; margin: 0 0 60px; }
+  .end .handle { font-family: var(--f-hand); font-weight: 600; font-size: 64px; }
+</style>
+</head>
+<body>
+<div class="reel" id="reel">
+  <div class="glow"></div><div class="glow2"></div>
+  <div class="brand"><svg viewBox="0 0 64 64"><path d="M10 44 A22 22 0 0 1 54 44 Z" fill="var(--sun)"/><g stroke="var(--sun-deep)" stroke-width="3.2" stroke-linecap="round"><line x1="32" y1="6" x2="32" y2="14"/><line x1="13" y1="14" x2="18" y2="20"/><line x1="51" y1="14" x2="46" y2="20"/><line x1="4" y1="31" x2="11" y2="33"/><line x1="60" y1="31" x2="53" y2="33"/></g><line x1="4" y1="50" x2="60" y2="50" stroke="var(--ink)" stroke-width="3.2" stroke-linecap="round"/><line x1="16" y1="57" x2="48" y2="57" stroke="var(--ink)" stroke-width="3.2" stroke-linecap="round" opacity=".45"/></svg>La Belle Histoire du Jour</div>
+  <div class="content">
+    <h1 id="title"></h1>
+    <div class="rule" id="rule"></div>
+    <div class="text" id="text"><p><span id="shown"></span><span id="last"></span><span class="rest" id="rest"></span></p><div class="fin" id="fin">Fin.</div></div>
+  </div>
+  <div class="end" id="end"><div class="halo"></div><div class="in">
+    <h2>Et toi, quelle est ta belle histoire du jour&#8239;?</h2>
+    <p>Raconte-la nous en message privé ou en commentaire 💌</p>
+    <div class="handle">@bellehistoiredujour</div>
+  </div></div>
+</div>
+<script>
+const typo = (s) => String(s ?? "").replace(/\s+/g, " ").trim().replace(/'/g, "’")
+  .replace(/«\s*/g, "« ").replace(/\s*»/g, " »").replace(/\s+([;!?])/g, " $1").replace(/\s+:/g, " :");
+let T = null;
+const $ = (id) => document.getElementById(id);
+const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+const ease = (x) => { x = clamp(x, 0, 1); return x * x * (3 - 2 * x); };
+
+/** Prépare le reel : met en page tout le texte (taille ajustée pour qu'il tienne), calcule la chronologie. */
+window.reelSetup = async function (story) {
+  await Promise.all([...document.fonts].map((f) => f.load().catch(() => null)));
+  await document.fonts.ready;
+  const text = typo(story.text);
+  $("title").textContent = typo(story.title);
+  // Taille du titre puis du texte : la plus grande qui tient (texte complet + « Fin. » visibles).
+  for (const fs of [76, 70, 64, 58]) { $("title").style.fontSize = fs + "px"; if ($("title").scrollWidth <= $("title").clientWidth + 1) break; }
+  $("shown").textContent = text; $("last").textContent = ""; $("rest").textContent = "";
+  const box = $("text"); let size = 30;
+  for (const fs of [56, 53, 50, 47, 44, 42, 40, 38, 36, 34, 32, 30]) {
+    box.style.fontSize = fs + "px"; size = fs;
+    if (box.scrollHeight <= box.clientHeight + 1) break;
+  }
+  if (box.scrollHeight > box.clientHeight + 1) return { ok: false, error: "TOO_LONG" };
+  // Chronologie de la frappe : vitesse adaptée à la longueur, petites pauses à la ponctuation.
+  const chars = [...text];
+  const cps = clamp(chars.length / 15, 17, 26);
+  const times = []; let t = 1.0;
+  for (const c of chars) { t += 1 / cps; if (/[.!?…]/.test(c)) t += 0.35; else if (/[,;:]/.test(c)) t += 0.14; times.push(t); }
+  const typed = t;
+  const finAt = typed + 0.5, endAt = finAt + 2.8, duration = endAt + 3.6;
+  T = { chars, times, typed, finAt, endAt, duration };
+  return { ok: true, duration, fontSize: size, chars: chars.length };
+};
+
+/** Affiche l'état du reel à l'instant t (secondes). */
+window.reelFrame = function (t) {
+  const { chars, times, finAt, endAt, duration } = T;
+  $("title").style.opacity = ease(t / 0.6);
+  $("title").style.transform = `translateY(${(1 - ease(t / 0.6)) * 24}px)`;
+  $("rule").style.opacity = ease((t - 0.3) / 0.5);
+  let lo = 0, hi = times.length; while (lo < hi) { const m = (lo + hi) >> 1; if (times[m] <= t) lo = m + 1; else hi = m; }
+  $("shown").textContent = chars.slice(0, Math.max(0, lo - 1)).join("");
+  $("last").textContent = lo ? chars[lo - 1] : "";
+  $("rest").textContent = chars.slice(lo).join("");
+  const blinkOn = lo < chars.length || Math.floor(t * 2) % 2 === 0;
+  $("last").className = t > 0.8 && t < finAt && blinkOn ? "on" : "";
+  $("fin").style.opacity = ease((t - finAt) / 0.5);
+  $("end").style.opacity = ease((t - endAt) / 0.6);
+  return t <= duration;
+};
+</script>
+</body>
+</html>
