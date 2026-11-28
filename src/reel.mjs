@@ -48,7 +48,7 @@ export async function renderReel(story, outDir, { hue = 0, music } = {}) {
     await page.evaluate((t) => window.reelFrame(t), i / FPS);
     const buf = await reel.screenshot({ type: "jpeg", quality: 88 });
     if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once("drain", r));
-    if (i === Math.round((info.duration - 6.8) * FPS)) await writeFile(path.join(outDir, "cover.jpg"), buf); // texte complet + « Fin. »
+    if (i === Math.round((info.duration - 5.0) * FPS)) await writeFile(path.join(outDir, "cover.jpg"), buf); // texte complet + « Fin. »
   }
   ff.stdin.end(); await done; await browser.close();
   // Musique : fondu d'entrée/sortie, volume doux.
