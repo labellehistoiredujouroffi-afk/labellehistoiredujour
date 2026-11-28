@@ -1,0 +1,695 @@
+[
+ {
+  "id": "F001",
+  "title": "Le compliment du tram",
+  "theme": "Gentillesse",
+  "angle": "Compliment",
+  "text": "Aujourd'hui, dans le tram, une dame d'au moins 80 ans s'est penchée vers moi : « Vous êtes drôlement bien habillée, vous m'avez égayé le trajet. » Je portais la robe jaune que je n'osais jamais mettre. Je suis descendue avec un sourire jusqu'aux oreilles. Demain, je la remets."
+ },
+ {
+  "id": "F002",
+  "title": "Le café payé d'avance",
+  "theme": "Gentillesse",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, j'ai voulu payer mon café et la serveuse m'a dit que c'était déjà réglé. Le monsieur avant moi avait laissé de quoi offrir le café à la personne suivante. Il était déjà parti, je n'ai même pas pu le remercier. Alors j'en ai payé un pour la personne d'après."
+ },
+ {
+  "id": "F003",
+  "title": "Le dessin sur le frigo",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, en rentrant d'une journée épuisante, j'ai trouvé un dessin scotché sur le frigo. Ma fille de six ans m'avait dessinée avec une cape. En dessous, elle avait écrit : « Ma maman super-héroïne ». La fatigue a disparu d'un coup."
+ },
+ {
+  "id": "F004",
+  "title": "Le parapluie partagé",
+  "theme": "Gentillesse",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, j'attendais le bus sous une pluie battante, sans parapluie. Un adolescent s'est mis à côté de moi et a tendu le sien au-dessus de ma tête, sans un mot. On a attendu dix minutes comme ça. En montant, il m'a juste dit : « Bonne soirée, madame. »"
+ },
+ {
+  "id": "F005",
+  "title": "Les vingt ans de mariage",
+  "theme": "Amour",
+  "angle": "Couple",
+  "text": "Aujourd'hui, pour nos vingt ans de mariage, mon mari m'a tendu une vieille boîte à chaussures. Dedans, il y avait tous les tickets de cinéma de nos sorties depuis notre premier rendez-vous. Il les avait gardés en secret pendant vingt ans. J'ai pleuré devant le film suivant, et ce n'était pas à cause du film."
+ },
+ {
+  "id": "F006",
+  "title": "Le voisin du dessus",
+  "theme": "Voisinage",
+  "angle": "Voisin",
+  "text": "Aujourd'hui, j'ai trouvé un mot glissé sous ma porte : « Je vous entends jouer du piano tous les soirs. Je voulais vous dire que ça m'accompagne depuis la mort de ma femme. Merci. » Ce soir, j'ai joué un peu plus longtemps."
+ },
+ {
+  "id": "F007",
+  "title": "Le premier mot",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, mon fils de quatorze mois a dit son premier mot. Après des semaines à lui répéter « papa » et « maman », il a regardé notre chien droit dans les yeux et a dit : « Biscuit ». Le chien en a remué la queue pendant dix minutes."
+ },
+ {
+  "id": "F008",
+  "title": "La caissière",
+  "theme": "Commerce",
+  "angle": "Commerçant",
+  "text": "Aujourd'hui, la caissière du supermarché m'a demandé si ça allait. J'ai répondu « oui oui », comme d'habitude. Elle m'a regardée et a dit : « Vous êtes sûre ? Vous avez l'air fatiguée. Prenez soin de vous. » Une phrase de rien du tout. Elle m'a portée toute la soirée."
+ },
+ {
+  "id": "F009",
+  "title": "Le chien retrouvé",
+  "theme": "Animaux",
+  "angle": "Animal",
+  "text": "Aujourd'hui, après trois jours à coller des affiches partout dans le quartier, mon téléphone a sonné. Une petite fille avait retrouvé mon chien dans son jardin et l'avait nourri avec ses tartines. Quand il m'a vu, il a sauté si haut qu'il m'a fait tomber. La petite fille a refusé la récompense. Elle a juste demandé si elle pouvait venir le promener de temps en temps."
+ },
+ {
+  "id": "F010",
+  "title": "Les fleurs du vendredi",
+  "theme": "Amour",
+  "angle": "Couple",
+  "text": "Aujourd'hui, comme tous les vendredis depuis 52 ans, mon grand-père a acheté un bouquet de fleurs pour ma grand-mère. Je lui ai demandé s'il ne se lassait jamais. Il a haussé les épaules : « Elle ne s'est jamais lassée de moi. »"
+ },
+ {
+  "id": "F011",
+  "title": "Le message de mon ancien prof",
+  "theme": "École",
+  "angle": "Enseignant",
+  "text": "Aujourd'hui, j'ai reçu un message de mon professeur de français de troisième. Il avait vu passer l'annonce de mon premier livre et voulait me dire qu'il avait gardé ma rédaction sur la mer depuis quinze ans. « Je savais », a-t-il écrit. Je relis ce message depuis ce matin."
+ },
+ {
+  "id": "F012",
+  "title": "La collègue et le gâteau",
+  "theme": "Travail",
+  "angle": "Collègue",
+  "text": "Aujourd'hui, c'était mon dernier jour avant mon congé maternité. Je pensais partir discrètement. En ouvrant la salle de pause, j'ai trouvé toute l'équipe, un gâteau, et un petit body brodé avec le logo de la boîte. Le comptable, qui ne parle jamais, avait écrit la carte. Je n'ai pas réussi à la lire à voix haute."
+ },
+ {
+  "id": "F013",
+  "title": "Le pansement",
+  "theme": "Gentillesse",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, je me suis coupé le doigt en ouvrant un colis à la poste. Un petit garçon dans la file a fouillé son cartable et m'a tendu un pansement avec des dinosaures. « C'est mon dernier, mais vous en avez plus besoin que moi. » Je l'ai gardé toute la journée, fièrement."
+ },
+ {
+  "id": "F014",
+  "title": "Mamie et le téléphone",
+  "theme": "Générations",
+  "angle": "Grand-parent",
+  "text": "Aujourd'hui, ma grand-mère de 91 ans m'a envoyé son tout premier SMS. Il disait : « Bonjour ma chérie c'est mamie je t'aime point. » Avec le mot point écrit en toutes lettres. C'est officiellement mon message préféré."
+ },
+ {
+  "id": "F015",
+  "title": "Le chauffeur de bus",
+  "theme": "Gentillesse",
+  "angle": "Transport",
+  "text": "Aujourd'hui, je courais derrière le bus avec mes sacs de courses. Le chauffeur aurait pu partir, il m'a attendue. Quand je suis montée, essoufflée, il m'a dit : « Prenez votre temps, on n'est pas aux pièces. » Et tout le bus a applaudi. J'ai ri jusqu'à mon arrêt."
+ },
+ {
+  "id": "F016",
+  "title": "Les retrouvailles",
+  "theme": "Amitié",
+  "angle": "Ami",
+  "text": "Aujourd'hui, je suis tombé par hasard sur mon meilleur ami du collège, perdu de vue depuis vingt ans. Il était à la table d'à côté au restaurant. On s'est reconnus au rire. On devait dîner chacun de notre côté : on a fini par fermer le restaurant ensemble."
+ },
+ {
+  "id": "F017",
+  "title": "La voisine et la soupe",
+  "theme": "Voisinage",
+  "angle": "Voisin",
+  "text": "Aujourd'hui, j'étais cloué au lit avec une grippe. Ma voisine de palier, à qui je n'avais jamais dit plus que « bonjour », a frappé à ma porte avec une casserole de soupe encore fumante. « J'ai entendu tousser à travers le mur. » Je crois que je viens de me faire une amie."
+ },
+ {
+  "id": "F018",
+  "title": "Le premier salaire",
+  "theme": "Famille",
+  "angle": "Parent",
+  "text": "Aujourd'hui, j'ai touché mon premier vrai salaire. J'ai invité mes parents au restaurant, celui devant lequel on passait quand j'étais petit sans jamais pouvoir y entrer. Mon père a regardé la carte longtemps sans rien dire. Puis il a dit : « Je commande ce que tu veux, c'est toi le patron. »"
+ },
+ {
+  "id": "F019",
+  "title": "Le chat du quartier",
+  "theme": "Animaux",
+  "angle": "Animal",
+  "text": "Aujourd'hui, j'ai découvert que le gros chat roux qui dort sur mon paillasson tous les matins s'appelle Gaston. Il a aussi un collier avec un petit mot : « Je ne suis pas perdu, je fais juste ma tournée. Merci d'être sur mon chemin. » Je suis donc officiellement sur la tournée de Gaston."
+ },
+ {
+  "id": "F020",
+  "title": "Le mot dans le livre",
+  "theme": "Lecture",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, j'ai acheté un roman d'occasion. Entre deux pages, j'ai trouvé un petit mot : « À toi qui lis ce livre après moi : j'espère qu'il te fera autant de bien qu'à moi. Courage pour ce que tu traverses. » Je ne sais pas qui l'a écrit. Mais c'est exactement ce que j'avais besoin de lire."
+ },
+ {
+  "id": "F021",
+  "title": "La demande en mariage ratée",
+  "theme": "Amour",
+  "angle": "Couple",
+  "text": "Aujourd'hui, j'avais tout prévu pour demander ma copine en mariage : le pique-nique, la vue, la bague. Il s'est mis à pleuvoir des cordes. On s'est réfugiés sous un abribus, trempés. Je me suis mis à genou dans une flaque. Elle a dit oui en riant. Finalement, c'était parfait."
+ },
+ {
+  "id": "F022",
+  "title": "L'inconnue du métro",
+  "theme": "Gentillesse",
+  "angle": "Compliment",
+  "text": "Aujourd'hui, dans le métro, une jeune femme m'a tendu un papier en descendant. Dessus, elle avait écrit : « Votre rire tout à l'heure au téléphone a fait sourire tout le wagon. Merci. » Je ne savais même pas que je riais si fort."
+ },
+ {
+  "id": "F023",
+  "title": "Le bonhomme de neige",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, mes enfants ont fait un bonhomme de neige dans le jardin. Il portait mon écharpe, mes lunettes et ma casquette. Mon fils m'a expliqué : « C'est toi, comme ça, quand tu es au travail, on t'a quand même avec nous. » Je n'ai jamais été aussi fier d'être un bonhomme de neige."
+ },
+ {
+  "id": "F024",
+  "title": "Le boulanger",
+  "theme": "Commerce",
+  "angle": "Commerçant",
+  "text": "Aujourd'hui, il me manquait vingt centimes pour ma baguette. Le boulanger m'a fait un clin d'œil : « Vous me les devez, vous les aurez demain. » Demain, je lui apporte les vingt centimes. Et un croissant, pour une fois que c'est lui qui en reçoit un."
+ },
+ {
+  "id": "F025",
+  "title": "Le match de foot",
+  "theme": "Sport",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, l'équipe de mon fils a perdu 12 à 0. À la fin du match, il est venu vers moi, tout boueux et radieux : « Papa, tu as vu ? J'ai touché le ballon trois fois ! » On est allés fêter ça avec une crêpe. Trois touches de balle, ça se fête."
+ },
+ {
+  "id": "F026",
+  "title": "La lettre de mon père",
+  "theme": "Famille",
+  "angle": "Parent",
+  "text": "Aujourd'hui, j'ai déménagé et, en vidant un vieux carton, je suis tombée sur une lettre de mon père. Il l'avait écrite le jour de ma naissance, sans jamais me la donner. Il me souhaitait « d'être entourée de gens qui rient fort ». Je l'ai appelé. On a ri fort."
+ },
+ {
+  "id": "F027",
+  "title": "Le vieux monsieur au parc",
+  "theme": "Générations",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, au parc, un vieux monsieur m'a demandé s'il pouvait s'asseoir sur mon banc. On a parlé une heure. Il a été boulanger, marin, puis jardinier. En partant, il m'a dit : « Merci, je n'avais parlé à personne depuis lundi. » On a rendez-vous jeudi, même banc."
+ },
+ {
+  "id": "F028",
+  "title": "Le relais de la nuit",
+  "theme": "Solidarité",
+  "angle": "Voisin",
+  "text": "Aujourd'hui, on a avoué à nos voisins qu'avec le bébé, on n'avait pas dormi plus de trois heures d'affilée depuis une semaine. Ce soir, ils ont sonné avec des lasagnes et nous ont annoncé : « Samedi, on garde la petite deux heures. Vous, vous dormez. » J'ai failli pleurer dans les lasagnes."
+ },
+ {
+  "id": "F029",
+  "title": "Le sourire de la serveuse",
+  "theme": "Gentillesse",
+  "angle": "Compliment",
+  "text": "Aujourd'hui, j'ai déjeuné seule au restaurant pour la première fois de ma vie. J'étais un peu gênée. En m'apportant l'addition, la serveuse a glissé un petit mot : « Vous avez l'air de quelqu'un de bien en sa propre compagnie. » J'y retourne la semaine prochaine. Seule, et fière."
+ },
+ {
+  "id": "F030",
+  "title": "Le facteur",
+  "theme": "Voisinage",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, mon facteur a sonné pour me rendre une carte postale que j'avais envoyée à mon grand-père... et qui m'était revenue. Il savait que mon grand-père était parti le mois dernier. Il m'a dit : « Je me suis dit que vous voudriez la garder. » Je l'ai encadrée."
+ },
+ {
+  "id": "F031",
+  "title": "La fête des pères",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, mon beau-fils de dix ans m'a tendu une carte de fête des pères. Il a hésité, puis il a dit : « Tu n'es pas obligé de l'accepter, hein. » Je l'ai acceptée. Elle est dans mon portefeuille depuis ce matin."
+ },
+ {
+  "id": "F032",
+  "title": "La danse dans la cuisine",
+  "theme": "Amour",
+  "angle": "Couple",
+  "text": "Aujourd'hui, en rentrant, j'ai trouvé mes parents en train de danser dans la cuisine sur une vieille chanson, pendant que les pâtes cuisaient. Ils ont 70 ans. Ils ne m'ont même pas vue arriver. Les pâtes étaient trop cuites. Personne ne s'en est plaint."
+ },
+ {
+  "id": "F033",
+  "title": "Le compliment du collègue",
+  "theme": "Travail",
+  "angle": "Collègue",
+  "text": "Aujourd'hui, en réunion, mon chef a présenté un projet sur lequel j'avais beaucoup travaillé. Avant que je puisse dire quoi que ce soit, un collègue a levé la main : « Je précise que c'est Sarah qui a eu l'idée et qui a tout construit. » Je ne l'aurais jamais dit moi-même. Il l'a fait pour moi."
+ },
+ {
+  "id": "F034",
+  "title": "Le goûter partagé",
+  "theme": "École",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, ma fille est rentrée de l'école avec son goûter intact. Inquiète, je lui ai demandé si elle n'avait pas faim. « Si, mais Lucas avait oublié le sien, alors je lui ai donné le mien. » Elle avait donné tout son goûter, sans hésiter. J'en ai fait un deuxième."
+ },
+ {
+  "id": "F035",
+  "title": "Les mots croisés",
+  "theme": "Générations",
+  "angle": "Grand-parent",
+  "text": "Aujourd'hui, comme tous les dimanches, j'ai fait les mots croisés avec mon grand-père. Il perd un peu la mémoire depuis quelque temps. Mais il a trouvé « bonheur » en neuf lettres avant moi. « Huit lettres, papi. » Il a souri : « Pas chez nous. »"
+ },
+ {
+  "id": "F036",
+  "title": "Le livreur",
+  "theme": "Gentillesse",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, le livreur a remarqué la rampe devant ma porte et mon fauteuil roulant. Au lieu de déposer le colis en bas des marches de l'immeuble comme d'habitude, il a fait le tour par l'arrière et me l'a monté jusqu'à la cuisine. Il était en retard sur sa tournée. Il m'a dit que ce n'était pas grave."
+ },
+ {
+  "id": "F037",
+  "title": "La boîte à livres",
+  "theme": "Lecture",
+  "angle": "Voisin",
+  "text": "Aujourd'hui, j'ai déposé un vieux roman dans la boîte à livres de ma rue avec un petit mot : « Si vous l'avez aimé, laissez une trace. » Ce soir, il était revenu avec trois mots différents, trois écritures. Ma rue a désormais un club de lecture qui ne se connaît pas."
+ },
+ {
+  "id": "F038",
+  "title": "L'examen",
+  "theme": "École",
+  "angle": "Ami",
+  "text": "Aujourd'hui, je passais mon permis pour la quatrième fois. En sortant de chez moi, j'ai trouvé un dessin à la craie sur le trottoir devant ma porte : une voiture et « TU VAS L'AVOIR ». Mes colocs. Je l'ai eu. Ils ont redessiné une voiture avec une couronne."
+ },
+ {
+  "id": "F039",
+  "title": "Le chien de l'hôpital",
+  "theme": "Animaux",
+  "angle": "Animal",
+  "text": "Aujourd'hui, dans la salle d'attente de l'hôpital, j'étais très stressée. Un chien de thérapie est venu poser sa tête sur mes genoux sans que personne ne le lui demande. Il est resté là jusqu'à ce qu'on m'appelle. Je ne connais même pas son nom. Il a sûrement le plus beau métier du monde."
+ },
+ {
+  "id": "F040",
+  "title": "La recette de ma mère",
+  "theme": "Cuisine",
+  "angle": "Parent",
+  "text": "Aujourd'hui, j'ai enfin réussi le gâteau au chocolat de ma mère. Vingt ans que j'essaie. Je lui ai envoyé une photo. Elle m'a répondu : « Je t'avoue un secret : je mets une cuillère de café dedans. Mais le tien a l'air meilleur. » Vingt ans de recherche pour une cuillère de café."
+ },
+ {
+  "id": "F041",
+  "title": "Le contrôleur",
+  "theme": "Gentillesse",
+  "angle": "Transport",
+  "text": "Aujourd'hui, j'ai pris le train sans billet par erreur, j'avais composté le mauvais jour. Le contrôleur a regardé mon billet, puis mon visage paniqué, et a dit : « Vous avez une tête à voyager le bon jour la prochaine fois. » Et il est passé au suivant."
+ },
+ {
+  "id": "F042",
+  "title": "La déclaration d'une enfant",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, ma nièce de quatre ans m'a demandé pourquoi je n'avais pas d'enfants. Je lui ai répondu que ce n'était pas pour tout de suite. Elle a réfléchi puis m'a dit : « C'est pas grave, je peux être un peu ta fille le mercredi. » Les mercredis sont réservés à vie."
+ },
+ {
+  "id": "F043",
+  "title": "Le concert dans la rue",
+  "theme": "Musique",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, un musicien jouait du violon devant la gare. Une petite fille s'est mise à danser devant lui. Puis sa maman. Puis un monsieur en costume avec sa mallette. En deux minutes, il y avait dix inconnus qui dansaient sur le parvis. J'ai raté mon train. Je ne regrette rien."
+ },
+ {
+  "id": "F044",
+  "title": "L'appel de ma sœur",
+  "theme": "Famille",
+  "angle": "Fratrie",
+  "text": "Aujourd'hui, ma sœur m'a appelée sans raison. Juste pour me dire qu'elle avait entendu notre chanson d'enfance à la radio et qu'elle avait pensé à moi. On ne s'appelait plus beaucoup. On a parlé deux heures. On a prévu un week-end ensemble."
+ },
+ {
+  "id": "F045",
+  "title": "Le compliment au travail",
+  "theme": "Travail",
+  "angle": "Compliment",
+  "text": "Aujourd'hui, une cliente est revenue au magasin juste pour me dire que la robe que je lui avais conseillée la semaine dernière lui avait valu des compliments toute la soirée de son mariage. Elle m'a montré les photos. Elle était magnifique. J'ai eu l'impression d'avoir un peu été de la fête."
+ },
+ {
+  "id": "F046",
+  "title": "Le jardin partagé",
+  "theme": "Nature",
+  "angle": "Voisin",
+  "text": "Aujourd'hui, j'ai trouvé sur ma boîte aux lettres un panier de tomates et de courgettes. Le mot disait : « Trop de légumes, pas assez de bouches. Signé : le jardin du 12. » Je n'ai jamais vu le jardinier. Demain, je dépose une tarte aux courgettes devant le 12."
+ },
+ {
+  "id": "F047",
+  "title": "Le permis de grand-mère",
+  "theme": "Générations",
+  "angle": "Grand-parent",
+  "text": "Aujourd'hui, ma grand-mère a obtenu son code de la route. À 74 ans. Elle m'a appelée en criant tellement fort que j'ai dû éloigner le téléphone. Elle veut que je sois la première passagère. J'ai dit oui. Je vais quand même mettre ma ceinture deux fois."
+ },
+ {
+  "id": "F048",
+  "title": "Le petit voisin",
+  "theme": "Voisinage",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, le petit voisin de huit ans a sonné chez moi avec une carte faite main. Il avait remarqué que je vivais seul et que personne ne venait jamais. La carte disait : « Bonne journée monsieur, vous n'êtes pas tout seul, il y a nous. » Elle est sur ma cheminée."
+ },
+ {
+  "id": "F049",
+  "title": "Le marathon",
+  "theme": "Sport",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, je courais mon premier marathon. Au 35e kilomètre, j'ai voulu abandonner. Une inconnue sur le bord de la route a lu mon prénom sur mon dossard et s'est mise à crier : « ALLEZ NADIA, TU ES INCROYABLE ! » Je ne la connais pas. J'ai terminé. Grâce à elle."
+ },
+ {
+  "id": "F050",
+  "title": "Les cartes de Noël",
+  "theme": "Gentillesse",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, j'ai reçu une carte de vœux d'une famille que je ne connais pas. L'an dernier, j'avais rapporté le portefeuille de leur fils, trouvé sur un quai de gare. Ils ont gardé mon adresse pour me remercier chaque année. C'est la deuxième carte. J'ai répondu, cette fois."
+ },
+ {
+  "id": "F051",
+  "title": "La cantine",
+  "theme": "École",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, ma fille m'a raconté qu'un nouvel élève mangeait seul à la cantine. Elle est allée s'asseoir à côté de lui. Je lui ai demandé ce qu'ils s'étaient dit. Elle a haussé les épaules : « Rien, on a juste mangé. Mais il n'était plus tout seul. »"
+ },
+ {
+  "id": "F052",
+  "title": "Le vieil ami de mon père",
+  "theme": "Amitié",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, un homme m'a arrêté dans la rue : « Vous êtes le fils de Bernard ? Vous avez sa démarche. » C'était un ami d'enfance de mon père, qui nous a quittés il y a cinq ans. Il m'a raconté des histoires que je ne connaissais pas pendant une heure, sur le trottoir. J'ai eu l'impression de passer une heure avec mon père."
+ },
+ {
+  "id": "F053",
+  "title": "Le premier vélo",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, mon fils a fait du vélo sans les petites roues. J'ai couru derrière en tenant la selle, puis je l'ai lâchée sans le lui dire. Il a fait vingt mètres seul. Il s'est retourné pour me crier : « Tu vois, tu tiens super bien ! » Je n'ai rien dit. Je ne tenais rien du tout, et je n'ai jamais été aussi fier."
+ },
+ {
+  "id": "F054",
+  "title": "L'aide à la caisse",
+  "theme": "Solidarité",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, au supermarché, la dame devant moi s'est rendu compte que sa carte était refusée. Elle a commencé à reposer des articles, gênée. Avant que je réagisse, le jeune homme derrière moi a tendu sa carte : « C'est pour moi, madame. » Elle a voulu son adresse pour le rembourser. Il a juste dit : « Faites pareil un jour. »"
+ },
+ {
+  "id": "F055",
+  "title": "Le mot de ma fille",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, ma fille ado, qui ne me dit plus grand-chose depuis des mois, m'a envoyé un message à 23 heures : « Merci d'être venue me chercher ce soir sans poser de questions. T'es la meilleure. » Je l'ai lu dix fois. Je ne lui en parlerai pas. Mais je l'ai gardé."
+ },
+ {
+  "id": "F056",
+  "title": "Le chant de la chorale",
+  "theme": "Musique",
+  "angle": "Grand-parent",
+  "text": "Aujourd'hui, la chorale de l'école est venue chanter à la maison de retraite où vit mon grand-père. Il ne parle presque plus. Quand les enfants ont entonné « Douce France », il a chanté chaque mot, du premier au dernier. Toute la salle s'est tue pour l'écouter."
+ },
+ {
+  "id": "F057",
+  "title": "La file d'attente",
+  "theme": "Gentillesse",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, à la poste, j'avais mon bébé qui hurlait dans les bras. La file faisait vingt personnes. Une dame s'est retournée et a dit à tout le monde : « On la laisse passer ? » Tout le monde a dit oui. Vingt inconnus. J'en ai encore des frissons."
+ },
+ {
+  "id": "F058",
+  "title": "Le cours de cuisine",
+  "theme": "Cuisine",
+  "angle": "Ami",
+  "text": "Aujourd'hui, mon colocataire syrien m'a appris à faire le taboulé de sa grand-mère. Il m'a corrigé chaque geste avec une patience infinie. Quand j'ai goûté, il a fermé les yeux et a dit : « C'est presque comme chez moi. » Je crois que c'est le plus beau compliment qu'on m'ait jamais fait."
+ },
+ {
+  "id": "F059",
+  "title": "Le jardinier du lycée",
+  "theme": "École",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, c'était mon dernier jour de lycée. Le jardinier, à qui je disais bonjour chaque matin depuis trois ans, m'a attendu à la grille. Il m'a offert une petite plante en pot : « Pour que tu continues à pousser. » Elle est sur mon bureau d'étudiant."
+ },
+ {
+  "id": "F060",
+  "title": "Le prénom",
+  "theme": "Amour",
+  "angle": "Couple",
+  "text": "Aujourd'hui, ma femme m'a appris qu'elle était enceinte. Elle avait caché le test dans ma boîte à lunch, entre le sandwich et la pomme. Mes collègues m'ont vu crier dans la salle de pause. Ils m'ont tous pris dans leurs bras. Je n'ai pas fini mon sandwich."
+ },
+ {
+  "id": "F061",
+  "title": "Le taxi",
+  "theme": "Gentillesse",
+  "angle": "Transport",
+  "text": "Aujourd'hui, je suis monté dans un taxi en sortant de l'hôpital, après avoir appris une bonne nouvelle pour ma mère. Je l'ai racontée au chauffeur sans le vouloir. À l'arrivée, il a arrêté le compteur : « Cette course, c'est pour fêter ça. » Je ne connais même pas son prénom."
+ },
+ {
+  "id": "F062",
+  "title": "Les cheveux blancs",
+  "theme": "Amour",
+  "angle": "Compliment",
+  "text": "Aujourd'hui, j'ai arrêté de teindre mes cheveux. Je les ai laissés blancs. Ce soir, mon mari m'a regardée longuement puis m'a dit : « Tu ressembles à la neige du premier jour de nos vacances au ski. » Je ne me suis jamais trouvée aussi belle."
+ },
+ {
+  "id": "F063",
+  "title": "Le stagiaire",
+  "theme": "Travail",
+  "angle": "Collègue",
+  "text": "Aujourd'hui, le stagiaire est venu me voir à la fin de son stage. Il m'a remerciée de lui avoir appris plein de choses. Je ne pensais pas lui avoir appris grand-chose. Il m'a dit : « Si, vous m'avez appris qu'on peut dire bonjour à tout le monde le matin, même aux stagiaires. » J'y repense depuis."
+ },
+ {
+  "id": "F064",
+  "title": "Le ballon",
+  "theme": "Voisinage",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, le ballon des enfants du quartier a atterri dans mon jardin pour la dixième fois de la semaine. Au lieu de le leur rendre, j'ai mis des baskets et je suis allé jouer avec eux. J'ai 63 ans. J'ai marqué un but. Ils m'ont demandé si je revenais demain."
+ },
+ {
+  "id": "F065",
+  "title": "L'écharpe",
+  "theme": "Gentillesse",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, il faisait moins cinq et un sans-abri devant la boulangerie tremblait. Une collégienne a enlevé son écharpe et la lui a enroulée autour du cou, sans rien dire. Puis elle est repartie en courant pour ne pas être en retard. Toute la file de la boulangerie l'a regardée partir."
+ },
+ {
+  "id": "F066",
+  "title": "La photo de classe",
+  "theme": "Amitié",
+  "angle": "Ami",
+  "text": "Aujourd'hui, pour mes 40 ans, ma femme a retrouvé et invité en secret neuf copains de ma photo de classe de CM2. Ils étaient tous là quand j'ai ouvert la porte. On a refait la photo, dans le même ordre. On n'a plus les mêmes cheveux. On a exactement le même sourire."
+ },
+ {
+  "id": "F067",
+  "title": "Le bébé du train",
+  "theme": "Gentillesse",
+  "angle": "Transport",
+  "text": "Aujourd'hui, dans le train, un bébé n'arrêtait pas de pleurer. La maman s'excusait auprès de tout le monde. Une vieille dame s'est levée, a chanté une berceuse en italien, et le bébé s'est endormi en deux minutes. Tout le wagon a chuchoté jusqu'à Lyon."
+ },
+ {
+  "id": "F068",
+  "title": "Mon chat et moi",
+  "theme": "Animaux",
+  "angle": "Animal",
+  "text": "Aujourd'hui, j'étais triste sans trop savoir pourquoi. Mon chat, qui déteste les câlins depuis onze ans, est venu se coucher sur mon ventre et a ronronné pendant une heure. Puis il est reparti comme si de rien n'était. On ne l'évoquera jamais. Mais je sais."
+ },
+ {
+  "id": "F069",
+  "title": "Le mot de la maîtresse",
+  "theme": "École",
+  "angle": "Enseignant",
+  "text": "Aujourd'hui, la maîtresse de mon fils m'a arrêtée à la sortie de l'école. J'ai cru qu'il avait fait une bêtise. Elle voulait juste me dire qu'il avait consolé un camarade toute la récréation et qu'elle trouvait qu'il avait un cœur immense. Je suis rentrée en le tenant un peu plus fort par la main."
+ },
+ {
+  "id": "F070",
+  "title": "La pizza",
+  "theme": "Solidarité",
+  "angle": "Commerçant",
+  "text": "Aujourd'hui, j'ai commandé une pizza en précisant que c'était pour fêter la fin de ma chimio. Le livreur est arrivé avec la pizza, un ballon et un dessert offert par le pizzaïolo. Sur la boîte, quelqu'un avait écrit au feutre : « Bravo la championne ! »"
+ },
+ {
+  "id": "F071",
+  "title": "Le saut en parachute",
+  "theme": "Famille",
+  "angle": "Parent",
+  "text": "Aujourd'hui, mon père a fait son premier saut en parachute. À 68 ans. Il en rêvait depuis toujours mais il disait qu'il était trop tard. On le lui a offert à trois, avec mes frères. En atterrissant, il a crié : « Pourquoi vous ne me l'avez pas offert avant ?! »"
+ },
+ {
+  "id": "F072",
+  "title": "Le compliment du coiffeur",
+  "theme": "Gentillesse",
+  "angle": "Compliment",
+  "text": "Aujourd'hui, je suis allé chez le coiffeur pour la première fois depuis ma rupture. Il m'a regardé dans le miroir et m'a dit : « Vous avez un beau visage, on va le mettre en valeur. » C'est peut-être son métier de dire ça. Mais je suis sorti en me tenant plus droit."
+ },
+ {
+  "id": "F073",
+  "title": "La bibliothécaire",
+  "theme": "Lecture",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, la bibliothécaire m'a mis de côté un livre sans que je le demande. « J'ai vu ce que vous lisiez ces derniers mois, je pense que celui-ci est pour vous. » Elle avait raison. Je l'ai fini dans la nuit. Elle me connaît mieux que mon algorithme."
+ },
+ {
+  "id": "F074",
+  "title": "Le pique-nique",
+  "theme": "Amitié",
+  "angle": "Ami",
+  "text": "Aujourd'hui, mes amis savaient que je passais une sale semaine. Ils ne m'ont rien demandé. Ils ont juste débarqué chez moi avec une nappe, un panier et une enceinte, et m'ont emmené au bord du lac. On n'a pas parlé de mes problèmes. On a juste ri. C'était exactement ça qu'il me fallait."
+ },
+ {
+  "id": "F075",
+  "title": "Les petites mains",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, j'ai trouvé mon fils de cinq ans en train de faire mon lit. Mal, très mal, avec les oreillers à l'envers. Il m'a dit : « Comme ça, tu as moins de travail. » Je n'ai pas refait le lit. J'ai dormi dedans comme ça, et très bien."
+ },
+ {
+  "id": "F076",
+  "title": "La demande d'aide",
+  "theme": "Solidarité",
+  "angle": "Voisin",
+  "text": "Aujourd'hui, j'ai posté sur le groupe de mon immeuble que je cherchais quelqu'un pour m'aider à monter mon nouveau canapé au cinquième étage sans ascenseur. Sept voisins sont descendus. Le canapé est monté en dix minutes. On a fini en apéro improvisé sur ledit canapé."
+ },
+ {
+  "id": "F077",
+  "title": "Le gâteau de la boulangère",
+  "theme": "Commerce",
+  "angle": "Commerçant",
+  "text": "Aujourd'hui, c'était mon anniversaire et je n'en avais parlé à personne. La boulangère, chez qui j'achète ma baguette tous les matins depuis six ans, m'a tendu un petit gâteau avec une bougie. Elle avait retenu la date en voyant ma carte d'identité une fois. Il y a six ans."
+ },
+ {
+  "id": "F078",
+  "title": "La lettre de l'inconnu",
+  "theme": "Gentillesse",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, j'ai reçu une lettre d'un homme dont j'avais aidé la mère à traverser une avenue l'été dernier. Elle lui avait parlé de « la jeune femme aux cheveux bleus ». Il a fait tous les salons de coiffure du quartier pour me retrouver. Il voulait juste me dire merci."
+ },
+ {
+  "id": "F079",
+  "title": "La danse de mariage",
+  "theme": "Amour",
+  "angle": "Parent",
+  "text": "Aujourd'hui, à mon mariage, mon père, qui n'a jamais dansé de sa vie, a pris le micro et a annoncé qu'il avait pris des cours en secret pendant six mois. Il a dansé une valse avec moi devant cent invités. Il a raté deux pas. C'était la plus belle valse du monde."
+ },
+ {
+  "id": "F080",
+  "title": "Le premier jour",
+  "theme": "Travail",
+  "angle": "Collègue",
+  "text": "Aujourd'hui, c'était mon premier jour dans un nouveau travail et j'étais terrifiée. En arrivant à mon bureau, j'ai trouvé une plante, un paquet de biscuits et un post-it : « Bienvenue ! Si tu te perds, je suis le bureau d'à côté. » Je me suis perdue trois fois. Elle m'a guidée trois fois."
+ },
+ {
+  "id": "F081",
+  "title": "Le cheval",
+  "theme": "Animaux",
+  "angle": "Animal",
+  "text": "Aujourd'hui, j'ai revu la jument que je montais quand j'avais quinze ans. Je pensais qu'elle ne se souviendrait pas de moi. Elle a traversé tout le pré au trot dès qu'elle a entendu ma voix. Vingt ans plus tard. Elle s'appelle Pépite et elle a une mémoire d'éléphant."
+ },
+ {
+  "id": "F082",
+  "title": "Le rire de mon fils",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, mon fils a éclaté de rire pour la première fois. J'avais juste éternué. J'ai éternué une deuxième fois, il a ri encore plus fort. J'ai fait semblant d'éternuer pendant vingt minutes. J'ai mal à la gorge. Je recommence demain."
+ },
+ {
+  "id": "F083",
+  "title": "Le cadenas",
+  "theme": "Amour",
+  "angle": "Couple",
+  "text": "Aujourd'hui, mon copain m'a emmenée à Paris pour notre premier anniversaire. Sur le pont, il a sorti un cadenas. Je lui ai rappelé que c'était interdit. Il a souri, l'a ouvert, et a sorti de dedans une clé... de son appartement. « Ce n'est pas le pont qu'on va fermer. C'est la porte de chez nous. »"
+ },
+ {
+  "id": "F084",
+  "title": "La couturière",
+  "theme": "Commerce",
+  "angle": "Commerçant",
+  "text": "Aujourd'hui, j'ai apporté la veste de mon grand-père à une couturière pour la mettre à ma taille. Quand elle a su à qui elle appartenait, elle a pris trois jours de plus pour garder la doublure d'origine, avec ses initiales brodées. Elle n'a pas voulu me faire payer le supplément."
+ },
+ {
+  "id": "F085",
+  "title": "Le voyage solo",
+  "theme": "Voyage",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, j'étais perdue dans une petite ville du Portugal, sans réseau, sans parler la langue. Une dame âgée m'a prise par le bras et m'a accompagnée vingt minutes à pied jusqu'à mon hôtel. On ne s'est pas compris un seul mot. On s'est comprises sur tout le reste."
+ },
+ {
+  "id": "F086",
+  "title": "Le cahier",
+  "theme": "École",
+  "angle": "Enseignant",
+  "text": "Aujourd'hui, j'ai retrouvé un ancien élève, aujourd'hui âgé de 30 ans. Il m'a montré une photo sur son téléphone : un vieux cahier de CM1 où j'avais écrit en rouge « Tu es capable de grandes choses ». Il m'a dit qu'il l'avait gardé dans chaque appartement. Il est devenu médecin."
+ },
+ {
+  "id": "F087",
+  "title": "La voisine du rez-de-chaussée",
+  "theme": "Voisinage",
+  "angle": "Grand-parent",
+  "text": "Aujourd'hui, la vieille dame du rez-de-chaussée m'a vue rentrer tard avec mes deux enfants endormis dans les bras. Elle m'a ouvert la porte de l'immeuble en robe de chambre et m'a dit : « Je vous attendais, je savais que vous auriez les mains pleines. » Elle m'attend comme ça tous les soirs, en fait."
+ },
+ {
+  "id": "F088",
+  "title": "Le trophée",
+  "theme": "Sport",
+  "angle": "Ami",
+  "text": "Aujourd'hui, notre équipe de basket du dimanche, la pire de la ligue, a gagné son premier match en trois ans. 41 à 40. On a fêté ça comme si on avait gagné les JO. Le capitaine a acheté une coupe en plastique au supermarché. Elle trône dans le local."
+ },
+ {
+  "id": "F089",
+  "title": "La visio",
+  "theme": "Famille",
+  "angle": "Grand-parent",
+  "text": "Aujourd'hui, mon grand-père a réussi à faire une visio tout seul pour la première fois. Il était tellement content qu'il a passé l'appel avec le téléphone collé contre son oreille. On a parlé vingt minutes en regardant son oreille en très gros plan. Le meilleur appel de l'année."
+ },
+ {
+  "id": "F090",
+  "title": "Les clés oubliées",
+  "theme": "Voisinage",
+  "angle": "Voisin",
+  "text": "Aujourd'hui, je suis rentrée du travail et j'ai réalisé que j'avais laissé mes clés sur la porte, côté extérieur, toute la journée. Sous les clés, un voisin avait scotché un post-it : « Vous avez de la chance d'habiter ici. Bonne soirée. » Il a raison."
+ },
+ {
+  "id": "F091",
+  "title": "Les cookies",
+  "theme": "Cuisine",
+  "angle": "Collègue",
+  "text": "Aujourd'hui, j'ai apporté des cookies au travail pour remercier mon équipe après une semaine difficile. Ils étaient ratés, à moitié brûlés. Mes collègues les ont tous mangés en me disant qu'ils étaient délicieux. Même ceux qui sont au régime. Surtout ceux qui sont au régime."
+ },
+ {
+  "id": "F092",
+  "title": "Le premier bain de mer",
+  "theme": "Nature",
+  "angle": "Grand-parent",
+  "text": "Aujourd'hui, j'ai emmené ma grand-mère voir la mer pour la première fois de sa vie. Elle a 86 ans. Elle a enlevé ses chaussures, a mis les pieds dans l'eau, et a dit : « Mais pourquoi personne ne m'a dit que c'était si beau ? » On y retourne dimanche."
+ },
+ {
+  "id": "F093",
+  "title": "La musique du voisin",
+  "theme": "Musique",
+  "angle": "Voisin",
+  "text": "Aujourd'hui, mon voisin a joué de la trompette sur son balcon pour l'anniversaire d'une dame de l'immeuble d'en face qu'il ne connaît pas. Il avait vu les ballons à sa fenêtre. Elle est sortie sur son balcon, a dansé, et tout le monde a applaudi depuis les fenêtres."
+ },
+ {
+  "id": "F094",
+  "title": "L'oral",
+  "theme": "École",
+  "angle": "Ami",
+  "text": "Aujourd'hui, j'ai bégayé pendant tout mon exposé, devant toute la classe. Quand j'ai fini, j'avais les joues en feu. Mon meilleur ami s'est levé et a commencé à applaudir, seul, très fort. Puis toute la classe a suivi. Je ne me souviens plus de mon exposé. Je me souviens de ces applaudissements."
+ },
+ {
+  "id": "F095",
+  "title": "Le vélo réparé",
+  "theme": "Solidarité",
+  "angle": "Inconnu",
+  "text": "Aujourd'hui, j'ai crevé sur une petite route de campagne, loin de tout. Un agriculteur sur son tracteur s'est arrêté, a sorti une rustine de sa boîte à outils et a réparé mon pneu en cinq minutes. Il a refusé mon billet : « Racontez juste à quelqu'un que les gens d'ici sont gentils. » Voilà, c'est fait."
+ },
+ {
+  "id": "F096",
+  "title": "La robe de bal",
+  "theme": "Gentillesse",
+  "angle": "Compliment",
+  "text": "Aujourd'hui, au bal du lycée, je portais une robe trouvée en friperie que je trouvais un peu démodée. Une fille de terminale que je ne connaissais pas est venue me voir : « Ta robe est la plus belle de la soirée, tu l'as trouvée où ? » J'ai dansé toute la nuit."
+ },
+ {
+  "id": "F097",
+  "title": "Le dernier jour de mon père",
+  "theme": "Travail",
+  "angle": "Parent",
+  "text": "Aujourd'hui, c'était le dernier jour de travail de mon père avant la retraite, après 40 ans dans la même usine. On est allés le chercher à la sortie avec ma mère. Tous ses collègues formaient une haie d'honneur en applaudissant. Je ne l'avais jamais vu pleurer. Il a pleuré en souriant."
+ },
+ {
+  "id": "F099",
+  "title": "La voix à la radio",
+  "theme": "Amour",
+  "angle": "Couple",
+  "text": "Aujourd'hui, en voiture, j'ai entendu mon prénom à la radio. Mon mari avait appelé l'émission pour me dédicacer notre chanson et dire que, même après quinze ans, il était toujours aussi amoureux. J'étais dans les bouchons. Les gens dans la voiture d'à côté m'ont vue pleurer et chanter en même temps."
+ },
+ {
+  "id": "F100",
+  "title": "La lettre au Père Noël",
+  "theme": "Famille",
+  "angle": "Enfant",
+  "text": "Aujourd'hui, j'ai lu la lettre au Père Noël de mon fils de sept ans. Il ne demandait rien pour lui. Il demandait juste que « maman puisse se reposer un peu, parce qu'elle travaille beaucoup ». Je vais me reposer. Et je vais quand même lui acheter son camion de pompiers."
+ }
+]
