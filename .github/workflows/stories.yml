@@ -6,18 +6,21 @@ on:
     inputs:
       test: { description: "Mode test (ignore l'interrupteur Paramètres) — PUBLIE RÉELLEMENT une story", type: boolean, default: false }
 concurrency: { group: stories, cancel-in-progress: false }
+permissions: { contents: write }
 jobs:
   story:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 22 }
+        with: { node-version: 22, cache: npm }
+      - run: npm ci && npx playwright install --with-deps chromium
       - run: node src/story.mjs
         env:
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
           APPS_SCRIPT_TOKEN: ${{ secrets.APPS_SCRIPT_TOKEN }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: "17841477131718128"
+          PAGES_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           TEST: ${{ inputs.test && '1' || '0' }}
