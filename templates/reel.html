@@ -71,11 +71,12 @@ window.reelSetup = async function (story) {
   if (box.scrollHeight > box.clientHeight + 1) return { ok: false, error: "TOO_LONG" };
   // Chronologie de la frappe : vitesse adaptée à la longueur, petites pauses à la ponctuation.
   const chars = [...text];
-  const cps = clamp(chars.length / 15, 17, 26);
-  const times = []; let t = 1.0;
-  for (const c of chars) { t += 1 / cps; if (/[.!?…]/.test(c)) t += 0.35; else if (/[,;:]/.test(c)) t += 0.14; times.push(t); }
+  const cps = clamp(chars.length / 10, 24, 34); // frappe rapide
+  const times = []; let t = 0.9;
+  for (const c of chars) { t += 1 / cps; if (/[.!?…]/.test(c)) t += 0.22; else if (/[,;:]/.test(c)) t += 0.08; times.push(t); }
   const typed = t;
-  const finAt = typed + 0.5, endAt = finAt + 2.8, duration = endAt + 3.6;
+  // Texte complet laissé à l'écran ~6 s pour le lire tranquillement, puis la carte finale.
+  const finAt = typed + 0.4, endAt = finAt + 6.0, duration = endAt + 3.4;
   T = { chars, times, typed, finAt, endAt, duration };
   return { ok: true, duration, fontSize: size, chars: chars.length };
 };
