@@ -5,6 +5,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import path from "node:path";
 import { buildCaption } from "./caption.mjs";
+import { hueCss } from "./theme.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -13,6 +14,7 @@ export async function renderStory(story, outDir, opts = {}, browser) {
   browser ??= await launch();
   const page = await browser.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: 1 });
   await page.goto(pathToFileURL(path.join(ROOT, "templates/post.html")).href);
+  if (opts.hue) await page.addStyleTag({ content: hueCss(opts.hue) }); // teinte du jour
   const res = await page.evaluate(([s, o]) => window.BHJ.build(s, o), [story, opts]);
   await mkdir(outDir, { recursive: true });
   const files = [];
@@ -32,7 +34,7 @@ export async function renderStory(story, outDir, opts = {}, browser) {
   }
   await page.close();
   if (own) await browser.close();
-  const manifest = { id: story.id, origin: story.origin, ...res, files, generatedAt: new Date().toISOString() };
+  const manifest = { id: story.id, origin: story.origin, ...res, hue: opts.hue || 0, files, generatedAt: new Date().toISOString() };
   if (res.ok) {
     manifest.caption = buildCaption(story, { slides: files.length });
     await writeFile(path.join(outDir, "caption.txt"), manifest.caption);

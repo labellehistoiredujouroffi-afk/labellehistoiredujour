@@ -5,6 +5,7 @@
 import { writeFile, readFile, rm, readdir } from "node:fs/promises";
 import path from "node:path";
 import { renderStory } from "./render.mjs";
+import { hueFor } from "./theme.mjs";
 
 const { APPS_SCRIPT_URL, APPS_SCRIPT_TOKEN, PAGES_BASE_URL } = process.env;
 const STATE = "/tmp/bhj-state.json";
@@ -24,7 +25,7 @@ async function prepare() {
   const s = await api("prepare", { date });
   if (s.skip) { console.log("Rien à préparer :", s.reason); await writeFile(STATE, JSON.stringify({ skip: true })); return; }
   const dir = `posts/${date}-${s.id}`;
-  const m = await renderStory(s, path.join("docs", dir), { maxSlides: 10, singleMaxWords: Number(process.env.SINGLE_MAX_WORDS || 40) });
+  const m = await renderStory(s, path.join("docs", dir), { maxSlides: 10, singleMaxWords: Number(process.env.SINGLE_MAX_WORDS || 40), hue: hueFor(date) });
   if (!m.ok) {
     await api("renderFailed", { date, id: s.id, error: m.error, detail: m.detail || "" });
     throw new Error(`Génération impossible pour ${s.id} : ${m.error}`);
